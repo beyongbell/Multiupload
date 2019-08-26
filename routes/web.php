@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'UploadsController@index');
+Route::delete('/images/{imageUpload}', 'UploadsController@destroy');
